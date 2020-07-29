@@ -7,3 +7,10 @@ html(lang="en")
         script(src="")
     body
         div this is pug
+        form(action="/api/add", method="POST")
+            input(type="text", name="text", id="text")
+            input(type="submit", value="Add")
+
+        div
+            for i in data
+                div #{i.TEXT}

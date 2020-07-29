@@ -1,9 +1,13 @@
-import express from "express";
+const express = require("express");
+const pool = require("../database");
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", (req, res) => {
-  res.render("index");
+globalRouter.get(["/", "/add"], (req, res) => {
+  const sql = "SELECT * FROM todo";
+  pool.query(sql).then((data) => {
+    res.render("index", { data });
+  });
 });
 
-export default globalRouter;
+module.exports = globalRouter;

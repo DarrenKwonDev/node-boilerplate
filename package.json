@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node app.js --delay 2"
+    "start": "nodemon --exec babel-node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +23,8 @@
     "helmet": "^3.23.3",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "util": "^0.12.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
