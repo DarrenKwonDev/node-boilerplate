@@ -22,9 +22,11 @@
     "express-session": "^1.17.1",
     "helmet": "^3.23.3",
     "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
     "pug": "^3.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "nodemon": "^2.0.4"
   }
 }
